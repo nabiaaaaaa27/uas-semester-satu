@@ -1,0 +1,61 @@
+<html>
+<title>transksi uas</title>
+<head>
+    <style>
+         .form-container form div {
+            margin-bottom: 15px;
+        }
+
+        .form-container form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-container form input, .form-container form select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container form button {
+            background-color: #e97acd;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .form-container form button:hover {
+            background-color: #e97acd;
+        }
+    </style>
+    <section class="form-container">
+        <h2>Form Transaksi</h2>
+        <form onsubmit="return validateTransactionForm(event)">
+            <div>
+                <label for="transaction-name">Nama Transaksi</label>
+                <input type="text" id="transaction-name" name="transaction-name" required>
+            </div>
+            <div>
+                <label for="transaction-amount">Jumlah</label>
+                <input type="number" id="transaction-amount" name="transaction-amount" required>
+            </div>
+            <div>
+                <label for="transaction-category">Kategori</label>
+                <select id="transaction-category" name="transaction-category" required>
+                    <option value="Penjualan">Penjualan</option>
+                    <option value="Pembelian">Pembelian</option>
+                </select>
+            </div>
+    <header>
+            <ul>
+                 <li><a href="daftar transaksi uas semester 1.html">Daftar Transaksi</a></li>
+    </header>
+            <button type="submit">Simpan</button>
+        </form>
+    </section>
+</head>
+</html>
